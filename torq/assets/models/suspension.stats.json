@@ -1,0 +1,14 @@
+{
+  "triangles": 66292,
+  "drawCalls": 20,
+  "materials": 6,
+  "bytes": 1907716,
+  "textures": 0,
+  "parts": [
+    "strut",
+    "spring",
+    "arm",
+    "hub",
+    "brakes"
+  ]
+}

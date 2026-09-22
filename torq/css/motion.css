@@ -1,0 +1,42 @@
+/* Shared restrained timing; no framework, scroll hijacking or navigation delay. */
+.btn,.icon-btn{transition:background var(--transition),color var(--transition),border-color var(--transition),box-shadow var(--transition),transform var(--motion-fast) var(--ease)}
+.btn:active:not(:disabled),.icon-btn:active:not(:disabled){transform:translateY(1px)}
+.product-card{transition:transform var(--transition),border-color var(--transition),box-shadow var(--transition)}
+.product-card:hover{transform:translateY(-3px);border-color:#bdc8d7;box-shadow:0 10px 28px #1113150d}
+.product-photo img{transition:transform var(--transition)}
+.product-card:hover .product-photo img{transform:scale(1.025)}
+.brand-marquee-track{animation:brand-drift 85s linear infinite;will-change:transform;transform:translate3d(0,0,0);backface-visibility:hidden;contain:layout paint style}
+.brand-strip:hover .brand-marquee-track,.brand-strip:focus-within .brand-marquee-track{animation-play-state:paused}
+.brand-logo{transition:opacity var(--transition),filter var(--transition),transform var(--transition)}
+.brand-tile:hover .brand-logo{transform:scale(1.025)}
+@keyframes brand-drift{to{transform:translate3d(-50%,0,0)}}
+@keyframes subtle-in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@keyframes modal-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@keyframes backdrop-in{from{background:#11131500}to{background:#11131588}}
+@keyframes chip-in{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:scale(1)}}
+.mega-menu:not([hidden]),.suggestions:not([hidden]){animation:subtle-in var(--motion-standard) var(--ease)}
+.filter-chips .chip{animation:chip-in var(--motion-fast) var(--ease)}
+.search-result>*{animation:subtle-in var(--motion-standard) var(--ease)}
+.error:not([hidden]){animation:subtle-in var(--motion-fast) var(--ease)}
+dialog[open]{animation:modal-in var(--motion-large) var(--ease)}
+dialog[open]::backdrop{animation:backdrop-in var(--motion-large) var(--ease)}
+dialog.closing::backdrop{background:#11131500;transition:background 180ms var(--ease)}
+.reveal-section{opacity:1;transform:none}
+.reveal-section.revealed{opacity:1;transform:none}
+.suspension-canvas,.hero-scene>img{transition:opacity var(--motion-large) var(--ease)}
+.scene-tooltip{animation:subtle-in var(--motion-fast) var(--ease)}
+.header-action.cart{width:176px;min-width:176px}
+.header-action.cart>span{font-size:11px}
+.header-action.cart>span b{display:inline-block}
+.summary-total strong,.summary-row>span:last-child,.cart-line-right>strong{display:inline-block}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .brand-marquee-track{transform:none!important}
+ .brand-marquee-track{width:100%}
+ .brand-marquee-group{width:100%;flex:1}
+ .brand-marquee-group[aria-hidden=true]{display:none}
+ .brand-strip .brand-tile{flex:1;width:auto;min-width:0;padding:20px}
+ .reveal-section{opacity:1;transform:none}
+ .product-card:hover,.product-card:hover .product-photo img,.brand-tile:hover .brand-logo{transform:none}
+}
+html.no-dom-motion *,html.no-dom-motion *::before,html.no-dom-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}

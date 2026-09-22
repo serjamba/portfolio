@@ -1,0 +1,65 @@
+/* Desktop refinements. Mobile/tablet intentionally remains a subsequent stage. */
+.header-inner{gap:20px}
+.header-actions{gap:10px;flex-shrink:0}
+.header-action{min-width:64px;min-height:56px;padding:8px 9px;justify-content:center;border-radius:8px;gap:5px}
+.header-action>span{font-size:11px}
+.header-action .icon{width:21px;height:21px}
+.header-action:hover{background:var(--paper);color:var(--blue)}
+.header-action.cart{min-width:146px;flex-direction:row;gap:9px;padding-inline:10px}
+.header-action.cart>span{white-space:nowrap;font-size:12px}
+.header-action .badge{right:9px;top:3px;min-width:16px;height:16px;font-size:9px;line-height:16px}
+.header-action.cart .badge{left:23px;right:auto;top:8px}
+.garage-dot{left:39px!important;right:auto!important;top:8px!important}
+.global-search{min-width:230px}
+.global-search input{font-size:12px}
+.brand-strip{display:block;overflow:hidden;border:0;border-block:1px solid var(--line);border-radius:0;background:transparent;padding:18px 0}
+.brand-marquee-track{display:flex;width:max-content}
+.brand-marquee-group{display:flex;flex:none}
+.brand-strip .brand-tile{flex:0 0 214px;width:214px;height:64px;border:0;border-radius:0;background:transparent}
+.brand-tile .brand-logo{width:136px;height:34px;object-fit:contain;filter:none;opacity:.65}
+.brand-tile[href*="Brembo"] .brand-logo{width:142px}
+.brand-tile[href*="KYB"] .brand-logo{width:102px}
+.brand-tile[href*="SKF"] .brand-logo{width:104px}
+.brand-tile:hover{background:transparent}
+.brand-tile:hover .brand-logo{opacity:1}
+.product-card{display:flex;flex-direction:column;min-width:0}
+.product-card .product-name{font-size:15px;font-weight:600;line-height:1.5;min-height:45px;letter-spacing:-.15px}
+.product-card .brand{font-size:10px;letter-spacing:1.1px;color:var(--muted);font-weight:500}
+.product-card .sku{font-size:10px;color:#7a828d}
+.product-card .parameters{font-size:11px;color:#747d87;min-height:32px;line-height:1.5}
+.product-card .compatibility{min-height:34px;line-height:1.45;font-size:11px;display:flex;align-items:center}
+.product-card .price{font-size:25px;letter-spacing:-.6px;font-weight:650;margin-top:auto;padding-top:12px}
+.product-card .price small{letter-spacing:0;font-size:11px}
+.product-card .stock,.product-card .delivery{font-size:11px;line-height:1.6}
+.product-card .btn{margin-top:18px;min-height:44px;font-size:12px;white-space:nowrap}
+.product-card .delivery{color:var(--muted)}
+.product-photo{overflow:hidden}
+.product-photo img{height:100%;width:100%;object-fit:contain}
+.gallery-thumbs .macro-thumb img{transform:scale(2.5);transform-origin:50% 42%}
+.main-product-image.detail img{transform:scale(2.3);transform-origin:50% 42%}
+.gallery-thumbs button{width:76px;height:76px;flex:none}
+.gallery-thumbs button:hover{border-color:var(--blue)}
+.gallery-thumbs span{font-size:11px;line-height:1.8}
+.gallery-zoom{height:60vh;overflow:hidden;background:white}
+.gallery-zoom img{width:100%;height:100%;object-fit:contain}
+.gallery-zoom.macro img{transform:scale(2.3);transform-origin:50% 42%}
+.car-card{overflow:hidden;padding:26px;box-shadow:0 6px 24px #11131503}
+.car-visual{margin:20px -26px 22px;height:210px;background:white;overflow:hidden}
+.car-visual img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.car-card h2{font-size:24px;letter-spacing:-.7px}
+.car-card .vin{font-family:var(--font);letter-spacing:1px;color:#7b8490;font-size:11px;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.car-card>.btn{height:46px}
+.car-card .chip{padding:6px 8px}
+.checkout-form.stack{gap:28px}
+.checkout-form>.panel{padding:32px}
+.form-section-title{padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:26px}
+.form-section-title>span{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:var(--blue-light);font-size:10px;flex:none}
+.form-section-title h2{font-size:21px;letter-spacing:-.4px}
+.form-section-title button{font-size:11px}
+.order-summary{padding:30px;border-color:#dce1e7;box-shadow:0 10px 32px #11131504}
+.order-summary h2{font-size:22px;letter-spacing:-.5px}
+.summary-total strong{font-variant-numeric:tabular-nums;font-size:29px}
+.buy-box .compatibility.large{margin-top:4px;padding:18px}
+.buy-box .stock{margin-top:8px;font-size:12px}
+.buy-box .sku{font-size:11px}
+@media(max-width:1320px){.header-inner{gap:14px}.header-actions{gap:3px}.header-action{min-width:59px;padding-inline:7px}.header-action.cart{min-width:139px}.global-search{min-width:220px}.gallery-thumbs button{width:66px;height:66px}.checkout-form>.panel{padding:26px}.order-summary{padding:26px}}

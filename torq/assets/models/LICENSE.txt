@@ -1,0 +1,15 @@
+TORQ suspension.glb and its original geometry authoring source
+SPDX-License-Identifier: CC0-1.0
+
+Original parametric editorial geometry created for the TORQ portfolio project.
+Source: tools/build-suspension.mjs (within this project).
+No third-party manufacturer CAD or marketplace model was incorporated.
+
+To the extent possible under law, copyright and related rights in this
+original model are waived under CC0 1.0 Universal:
+https://creativecommons.org/publicdomain/zero/1.0/
+Legal code: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+No warranty is provided. This is not engineering or fitment data.
+This dedication does not apply to Three.js (MIT), trademarks, fonts,
+logos, or other unrelated assets in the TORQ project.

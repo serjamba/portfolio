@@ -1,0 +1,30 @@
+/* Checkpoint: material-led hero and adjacent catalogue/service sections. */
+:root{--muted:#575b55;--radius:2px}
+#transition{inset:0;transform:none;clip-path:none;background-size:420px}
+.monolith-home .hero{grid-template-columns:1fr 1fr;gap:44px;padding:50px 0 56px;align-items:center}
+.monolith-home .hero-copy h1{font-size:clamp(44px,4.5vw,72px);line-height:1.02;letter-spacing:-.06em}
+.monolith-home .hero-copy .lead{font-size:17px;max-width:470px;color:#4b5049}
+.monolith-home .hero-copy em{color:inherit}
+.monolith-home .hero-copy,.monolith-home .hero-visual{min-width:0}
+.monolith-home .hero-notes{color:#42483f;border-top:1px solid #b9bcb2;padding-top:20px}
+.monolith-home .material-hero{position:relative;background:#dedbd2;border:1px solid #cac8bf;padding:20px;min-height:0}
+.material-hero #cube-host{width:100%;height:auto;aspect-ratio:1.2;position:relative;overflow:hidden}
+.material-hero #cube-host>img,.material-hero #cube-host>canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.material-index,.material-caption{display:flex;justify-content:space-between;gap:18px;align-items:center;position:relative;z-index:2}
+.material-index{font-size:10px;letter-spacing:.1em;border-bottom:1px solid #acaea3;padding-bottom:16px}
+.material-caption{border-top:1px solid #acaea3;padding-top:16px}
+.material-caption strong{font-size:21px;letter-spacing:-.04em}.material-caption small{font-size:10px;text-align:right}
+.monolith-home>.section:nth-child(2){border-top:2px solid #252a24;padding-top:46px;padding-bottom:60px}
+.monolith-home .section-heading h2{font-size:clamp(32px,3vw,48px)}
+.monolith-home .material-grid{gap:0;border:1px solid #b9bcb2}
+.monolith-home .material-card{background:#f8f8f3;border:0;border-right:1px solid #b9bcb2;padding:30px;border-radius:0}
+.monolith-home .material-card:last-child{border-right:0;background:#e2e4da}
+.monolith-home .material-card h3{font-size:29px;margin-top:36px}
+.monolith-home .material-card>div{margin-top:36px;padding-top:20px;border-top:1px solid #c3c5bb}
+.monolith-home>.section:nth-child(3){background:#dedfd7;padding:44px;margin-bottom:64px}
+.monolith-home>.section:nth-child(3) .service-card{background:transparent;border-color:#aeb2a5}
+.monolith-home .service-card h3{overflow-wrap:anywhere;hyphens:auto}
+.product-row:nth-child(even){background:#e6e8de}.product-row{padding-inline:16px}.params{gap:0}.params>div{padding:8px 14px;border-left:1px solid #c0c3b7}.params dd{font-size:18px}
+@media(max-width:1000px){.monolith-home .hero{gap:24px}.monolith-home .hero-copy h1{font-size:42px}}
+@media(max-width:800px){.monolith-home .hero{grid-template-columns:1fr}.monolith-home .hero-copy h1{font-size:42px}.monolith-home .material-grid{grid-template-columns:1fr}.monolith-home .material-card{border-right:0;border-bottom:1px solid #b9bcb2}.monolith-home>.section:nth-child(3){padding:28px 18px}.params>div{padding:6px 9px}.material-caption strong{font-size:18px}}
+@media(max-width:360px){.monolith-home .hero-copy h1{font-size:36px}.material-caption{align-items:start;flex-direction:column;gap:8px}.material-caption small{text-align:left}.material-index{font-size:9px;letter-spacing:0;gap:8px}}

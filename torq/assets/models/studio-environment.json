@@ -1,0 +1,11 @@
+{
+  "width": 768,
+  "height": 1024,
+  "type": "HalfFloatType",
+  "format": "RGBAFormat",
+  "mapping": "CubeUVReflectionMapping",
+  "colorSpace": "LinearSRGBColorSpace",
+  "source": "Own four-softbox studio, tools/bake-environment.cjs, CC0-1.0",
+  "bytes": 6291456,
+  "gzipBytes": 243574
+}
