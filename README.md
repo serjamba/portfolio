@@ -1,29 +1,42 @@
-# Portfolio
+# Портфолио — пять проектов
 
-Five interactive portfolio concepts, with a shared entry page.
+Пять самостоятельных интерактивных концепций с общей стартовой страницей.
 
-- [Portfolio](https://serjamba.github.io/portfolio/)
+- [Общая страница портфолио](https://serjamba.github.io/portfolio/)
 - [AXIS](https://serjamba.github.io/portfolio/axis/)
 - [VOID](https://serjamba.github.io/portfolio/void/)
 - [MONOLITH](https://serjamba.github.io/portfolio/monolith/)
 - [TORQ](https://serjamba.github.io/portfolio/torq/)
 - [MOKA](https://serjamba.github.io/portfolio/moka/)
 
-## Hosting and updates
+## Публикация и обновление
 
-GitHub Pages: **Settings → Pages → Deploy from a branch → main → / (root)**.
-The `.nojekyll` file keeps this as a plain static site. Routes inside applications use URL hashes, so direct links and browser refresh do not need server rewrites.
+Настройка GitHub Pages: **Settings → Pages → Deploy from a branch → main → / (root) → Save**.
+Файл `.nojekyll` обеспечивает публикацию обычных статических файлов. Внутренние страницы приложений используют адреса с `#`, поэтому прямые ссылки и обновление страниц не требуют серверных перенаправлений.
 
-To update, clone this repository, edit the relevant site's files, test through a local HTTP server, then commit and push to `main`. Wait for the Pages deployment and verify the public URLs. Keep relative asset paths and matching filename case. For a local preview, run `python -m http.server 8000` from the repository root.
+Для обновления:
 
-Do not copy development archives, browser profiles, caches, backups, credentials, or original oversized source images into this repository. Local originals and backups are maintained separately by the owner.
+1. Склонируйте репозиторий и измените файлы нужного сайта.
+2. Проверьте результат через локальный HTTP-сервер: выполните `python -m http.server 8000` из корня репозитория и откройте локальный сервер на порту 8000 в браузере.
+3. Создайте коммит и отправьте изменения в ветку `main`.
+4. Дождитесь завершения развёртывания GitHub Pages и проверьте публичные адреса, включая обновление внутренних страниц.
 
-## Demonstration scope
+Сохраняйте относительные пути к ресурсам и точный регистр имён файлов.
 
-All five sites are portfolio concepts. Forms and checkout are demonstrations: no real requests, orders, payments, or contact submissions are performed. Use fictional data when testing.
+Не добавляйте в репозиторий рабочие архивы, профили браузеров, кеши, резервные копии, пароли, токены и ненужные тяжёлые исходники изображений. Локальные оригиналы и резервные копии хранятся отдельно.
 
-AXIS's Horizon is a conceptual architectural pavilion, not a constructed residential building or construction documentation. The static presentation render and interactive model use the same architecture but different rendering quality. Open 3D with the explicit button; walking uses WASD/arrows and mouse, with Escape to exit. On touch devices, use the prepared viewpoints. Walking limits the rendering buffer to 1024 pixels wide and disables screen-space contact shadows for performance.
+## Демонстрационные сценарии и ограничения
 
-## Resource credits
+Все пять сайтов — концептуальные проекты для портфолио. Формы и оформление заказа работают в демонстрационном режиме: реальные заявки, заказы и платежи не отправляются. Для проверки используйте вымышленные данные.
 
-See each site's `ASSET_MANIFEST.md`, AXIS's `pavilion/LICENSES.md`, and TORQ's `RESOURCE_SOURCES.md`. Third-party licenses remain beside the corresponding resources. These include Three.js (MIT), Inter (SIL OFL), Lucide (ISC), and Romantic Veneer by Jenelle van Heerden / Poly Haven (CC0). Manufacturer trademarks belong to their owners; their appearance does not imply partnership. Public repository access does not grant additional rights to third-party assets or trademarks.
+«Горизонт» в AXIS — концептуальный архитектурный павильон, а не реализованный жилой дом и не строительная документация. Презентационный кадр и интерактивная модель показывают одну архитектуру, но отличаются качеством освещения и рендеринга. Фотореализм не заявляется.
+
+3D запускается отдельной кнопкой. Прогулка рассчитана на клавиатуру и мышь: перемещение — WASD или стрелки, обзор — мышь, выход — Esc или кнопка интерфейса. На сенсорных устройствах используйте готовые ракурсы. Для снижения нагрузки в прогулке ширина буфера рендеринга ограничена 1024 пикселями, контактные тени в экранном пространстве отключены. Плавность зависит от устройства и браузера.
+
+## Ресурсы, лицензии и авторство
+
+Источники перечислены в файлах `ASSET_MANIFEST.md` соответствующих проектов, `axis/pavilion/LICENSES.md` и `torq/RESOURCE_SOURCES.md`. Лицензии сторонних ресурсов сохранены рядом с ними.
+
+Используются Three.js (MIT), Inter (SIL OFL), Lucide (ISC), текстура Romantic Veneer автора Jenelle van Heerden / Poly Haven (CC0).
+
+Товарные знаки производителей принадлежат их владельцам. Их использование в концептуальных проектах не означает партнёрства. Открытый доступ к репозиторию не предоставляет дополнительных прав на сторонние ресурсы и товарные знаки.
